@@ -1,5 +1,6 @@
 import requests
 import io
+import tkinter as Tk
 
 # Récupérer le contenu du fichier contenant la fonction via son URL
 url1 = 'https://raw.githubusercontent.com/bablebab/M1-Programming-JANATI-LOUALI-UNLUBAYIR/main/joueur.py'

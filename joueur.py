@@ -3,7 +3,7 @@ import sys
 import numpy as np 
 import pandas as pd
 from scipy.spatial.distance import euclidean
-from tkinter import *
+import tkinter as tk
 import matplotlib.pyplot as plt
 from collections import Counter
 import requests
@@ -25,7 +25,7 @@ df = data2.apply(pd.to_numeric)
 ####################
 
 def joueur():
-    caracteristiques = ['Poids', 'Taille', 'Vitesse', 'Tir', 'Qualité de passe', 'Niveau en défense', 'Force physique', 'Qualité de dribble', 'Pied faible', 'Geste technique']
+    caracteristiques = ['Poids ( en kg )', 'Taille ( en cm )', 'Vitesse ( de 1 à 100 )', 'Tir ( de 1 à 100 )', 'Qualité de passe ( de 1 à 100 )', 'Niveau en défense ( de 1 à 100 )', 'Force physique ( de 1 à 100 )', 'Qualité de dribble ( de 1 à 100 )', 'Pied faible ( de 1 à 5 )', 'Geste technique ( de 1 à 5 )']
 
     # Créer une série vide pour stocker les valeurs entrées
     valeurs = pd.Series(index=caracteristiques)
@@ -87,4 +87,27 @@ def joueur():
     # Trouver l'indice de la ligne ayant la distance minimale
     index_min = distances.idxmin()
     
-    print(data.loc[index_min])
+    final = data.loc[index_min]
+    
+    # Créer une fenêtre tkinter
+    root = tk.Tk()
+    root.title("Résultat")
+
+    # Créer un widget Text pour afficher l'objet
+    output_box = tk.Text(root)
+    output_box.pack()
+
+    # Convertir l'objet en une chaîne de caractères avec la fonction str()
+    objet_str = str(final)
+
+    # Afficher l'objet dans la sortie standard et dans la Text Box
+    print(objet_str)
+    output_box.insert("end", objet_str)
+
+    # Lancer la boucle principale de la fenêtre tkinter
+    root.mainloop()
+    
+    
+
+
+

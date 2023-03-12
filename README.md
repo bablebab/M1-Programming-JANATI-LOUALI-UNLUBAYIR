@@ -17,6 +17,8 @@ Le projet est divisé en deux parties :
 Le code permet une totale automatisation. En effet, on peut lancer projet_final.py de n'importe où sans posséder la moindre librairie annexe étant directement sur le repository GitHub.
 Les données ont été traitées de la même façon et il n'est pas nécessaire de posséder le moindre .csv.
 
+projet_final.py est le code final du projet, réunissant les deux autres codes directement par GitHub.
+
 # En quoi consiste le projet ?
 
 Si vous avez toujours voulu savoir quel est le joueur professionnel vous ressemblant le plus et quel est le poste qui serait adéquat pour vous, vous vous trouvez au bon endroit.

@@ -48,3 +48,7 @@ Les difficultés rencontrées ont été les suivantes :
 - Maîtriser tkinter, du moins du niveau de notre projet, a été très difficile et les bugs rencontrés ont été vastes. Vis à vis des matrices, cela était compliqué niveau temps d'organiser une fenêtre d'input et d'output contrairement au fichier joueur.py, où cela fonctionnait totalement.
 - Ordonner le code avec les fonctions était pas forcément facile de mise en place.
 - Permettre au code d'être lié à GitHub et de pouvoir lancer projet_final.py de n'importe où. Le soucis a été réglé et le code permet donc de le lancer, de manière individuelle, sans avoir ni données et ni tout autre code.
+
+###################################### EXPLICATION DU CODE ######################################
+
+Chaque ligne est détaillée petit à petit grâce à quelques notes, la structure y est expliquée et normalement compréhensif en voyant le code directement.

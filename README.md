@@ -22,3 +22,13 @@ Pour diversifier le contenu que nous souhaitons proposer, nous avons préférés
 Les données sont entrées par le biais d'une fenêtre tkinter pour le joueur en plus du résultat, après calcul.
 
 Il convient de noter que ce code ne traite pas les erreurs de saisie de l'utilisateur et ne prend pas en compte les interactions possibles entre les différentes caractéristiques d'un joueur. De plus, il utilise la distance euclidienne comme métrique de similarité, ce qui peut ne pas être la meilleure mesure pour ce type de problème.
+
+Le code permet une totale automatisation. En effet, on peut lancer projet_final.py de n'importe où sans posséder la moindre librairie annexe étant directement sur le repository GitHub.
+Les données ont été traitées de la même façon et il n'est pas nécessaire de posséder le moindre .csv.
+
+Les difficultés rencontrées ont été les suivantes :
+
+- Trouver une base de données FIFA, régulièrement mise à jour. Cela aurait été sympa d'actualiser constamment la base de données mais cela est apparemment impossible. En effet, FIFA garde ses serveurs de données privés.
+- Maîtriser tkinter, du moins du niveau de notre projet, a été très difficile et les bugs rencontrés ont été vastes. Vis à vis des matrices, cela était compliqué niveau temps d'organiser une fenêtre d'input et d'output contrairement au fichier joueur.py, où cela fonctionnait totalement.
+- Ordonner le code avec les fonctions était pas forcément facile de mise en place.
+- Permettre au code d'être lié à GitHub et de pouvoir lancer projet_final.py de n'importe où. Le soucis a été réglé et le code permet donc de le lancer, de manière individuelle, sans avoir ni données et ni tout autre code.

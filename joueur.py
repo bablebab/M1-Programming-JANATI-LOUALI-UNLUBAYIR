@@ -3,7 +3,7 @@ import sys
 import numpy as np 
 import pandas as pd
 from scipy.spatial.distance import euclidean
-import tkinter as tk
+import tkinter as Tk
 import matplotlib.pyplot as plt
 from collections import Counter
 import requests

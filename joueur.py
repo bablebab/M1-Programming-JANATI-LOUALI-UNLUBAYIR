@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from scipy.spatial.distance import euclidean
 import tkinter as Tk
+from tkinter import *
 import matplotlib.pyplot as plt
 from collections import Counter
 import requests
@@ -30,7 +31,7 @@ def joueur():
     valeurs = pd.Series(index=caracteristiques)
 
     # Créer une fenêtre tkinter
-    fenetre = Tk()
+    fenetre = tk.Tk()
     fenetre.title("Entrez vos caractéristiques")
 
     # Créer un widget Text pour afficher le résultat final

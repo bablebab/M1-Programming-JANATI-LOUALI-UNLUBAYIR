@@ -1,4 +1,5 @@
 # M1-Programming-JANATI-LOUALI-UNLUBAYIR
+
 M1 DS2E - Dossier lié au travail de programmation dans le cadre de l'UE Techniques de programmation.
 Sous la responsabilité de M. Pierre Pelletier, doctorant au Bureau d'Économie Théorique et Appliquée.
 
@@ -8,10 +9,16 @@ Vous trouverez ci-dessous le nom et prénom de chaque membre du groupe :
 - Rodi UNLUBAYIR, M1 DS2E
 - Salmane LOUALI, M1 DS2E
 
-Notre étude portera sur l'analyse et la prévision des joueurs de football en se basant sur la base de données FIFA disponible. En gros, comme on vous l'avez expliqué à l'oral, on programmera sur Python la possibilité à l'utilisateur de trouver le joueur qui lui correspond le plus, grâce à ses caractéristiques, mais également de déterminer la prévision relative au risque de blessure, si possible au niveau du temps donné.
+Le projet est divisé en deux parties :
 
-Notre première base de donnée est la suivante :
+- Trouver le joueur qui vous correspond le plus
+- Trouver le poste qui vous correspond le plus
 
-https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset
+Nous avons pour se faire utiliser la base de données FIFA 22, disponible à travers un utilisateur Kaggle, en utilisant une méthode de webscrapping pour télécharger directement la database à travers le site Kaggle.
+Les différents codes permettent de calculer la distance euclidienne entre les valeurs entrées et celles de chaque joueur dans la base de données, puis trouve l'indice du joueur ayant la distance minimale. 
+Les informations sur ce joueur sont alors affichées à l'écran.
 
-Il nous faut ensuite récolter de nouvelles données afin de pouvoir calculer la prévision liée au risque de blessure et ainsi, pouvoir anticiper les évolutions de carrière possible de chaque joueur.
+Pour diversifier le contenu que nous souhaitons proposer, nous avons préférés utiliser deux moyens différents : à travers des dataframes et des matrices.
+Les données sont entrées par le biais d'une fenêtre tkinter pour le joueur en plus du résultat, après calcul.
+
+Il convient de noter que ce code ne traite pas les erreurs de saisie de l'utilisateur et ne prend pas en compte les interactions possibles entre les différentes caractéristiques d'un joueur. De plus, il utilise la distance euclidienne comme métrique de similarité, ce qui peut ne pas être la meilleure mesure pour ce type de problème.

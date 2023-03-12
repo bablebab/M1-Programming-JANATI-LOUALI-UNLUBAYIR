@@ -15,7 +15,6 @@ response = requests.get(url)
 zip_file = zipfile.ZipFile(io.BytesIO(response.content))
 csv_file = zip_file.extract("players_22.csv")
 df = pd.read_csv(csv_file, sep=',')
-print(df.head())
 
 data = df.iloc[:, [2,3,11,12,27,28,29,37,38,39,40,41,42]]
 data.dropna(inplace=True)
